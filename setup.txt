@@ -1,0 +1,8 @@
+# Delete and recreate the venv in the current location when moving the folder to another place or another device
+
+deactivate 2>/dev/null; rm -rf .venv311; /opt/homebrew/bin/python3.11 -m venv .venv311 && source .venv311/bin/activate && python -m pip install --upgrade pip && pip install -r requirements.txt
+
+# or run
+./setup_venv.sh
+
+streamlit run MainScript.py

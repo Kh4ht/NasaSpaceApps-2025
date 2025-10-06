@@ -1,0 +1,29 @@
+[
+    {
+    "name": "Khaled Hassan AlTamimi",
+    "role": "Computer Science",
+    "bio": "Specializes in AI models for space exploration and exoplanet prediction.",
+    "photo": "assets/team info/team photos/Khaled.jpeg",
+    "linkedin": "https://www.linkedin.com/in/khaled-altamimi-9b5b872b8",
+    "github": "https://github.com/Kh4ht",
+    "email": "khaled.h.altamimi@gmail.com"
+  },
+    {
+    "name": "Yousef Moayad Hamadan",
+    "role": "Compurt Science",
+    "bio": "Full Stack Specialist with expertise in developing AI models for space exploration and exoplanet prediction.",
+    "photo": "assets/team info/team photos/Yousef.jpg",
+    "linkedin": " https://www.linkedin.com/in/yousef-moayad-94a8b9213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "github": "https://github.com/Kh4ht",
+    "email": "yousefmoayad593@gmail.com"
+  },
+    {
+    "name": "Yaman khaled obiedat",
+    "role": "Data science and artificial intelligence",
+    "bio": "specializes in ai models.",
+    "photo": "assets/team info/team photos/yaman.png",
+    "linkedin": "https://www.linkedin.com/in/yaman-obiedat-71583a291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "github": "https://github.com/Kh4ht",
+    "email": "yamanobiedat5@gmail.com"
+  }
+]
