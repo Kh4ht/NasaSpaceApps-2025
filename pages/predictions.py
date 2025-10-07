@@ -78,10 +78,6 @@ def app():
                 help='koi_duration'
             )
 
-            # Predict button
-            if st.button("Predict 🚀", key="manual_predict"):
-                H.predict_manually_entered_data_btn(model=model, input_data=input_data)
-
         with col2:
             input_data["koi_score"] = st.number_input("Disposition Score", 0.0, 1.0, input_data["koi_score"], help='koi_score')
             input_data["koi_fpflag_nt"] = st.selectbox("Not Transit-Like False Positive", [0, 1], index=input_data["koi_fpflag_nt"], help='koi_fpflag_nt')
@@ -98,6 +94,11 @@ def app():
         input_data['score_depth_ratio'] = input_data['koi_score'] / (input_data['koi_depth'] + 1e-6)
         input_data['duration_prad_ratio'] = input_data['koi_duration'] / (input_data['koi_prad'] + 1e-6)
         input_data['depth_teq_interaction'] = input_data['koi_depth'] * input_data['koi_teq']
+
+        # Predict button
+        if st.button("Predict 🚀", key="manual_predict"):
+            H.predict_manually_entered_data_btn(model=model, input_data=input_data)
+
     # ---------------------------
     # Tab 2: File Upload
     # ---------------------------
