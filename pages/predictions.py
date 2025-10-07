@@ -96,7 +96,7 @@ def app():
         input_data['depth_teq_interaction'] = input_data['koi_depth'] * input_data['koi_teq']
 
         # Predict button
-        if st.button("Predict 🚀", key="manual_predict"):
+        if st.button("Predict with AI 🚀", key="manual_predict"):
             H.predict_manually_entered_data_btn(model=model, input_data=input_data)
 
     # ---------------------------
@@ -107,6 +107,6 @@ def app():
 
         st.write("The CSV file with columns: koi_teq,koi_period,koi_duration,koi_prad,koi_score,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_depth,depth_duration_ratio,score_teq_interaction,score_depth_ratio,duration_prad_ratio,depth_teq_interaction")
 
-        if st.button("Predict 🚀", key="upload_predict"):
+        if st.button("Predict with AI 🚀", key="upload_predict"):
             H.predict_uploaded_file_data_btn(model=model,
                                             uploaded_file=st.file_uploader("Upload a CSV file with columns: radius, mass, temp", type=["csv"]))
